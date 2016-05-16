@@ -9,6 +9,6 @@ class Solution:
         num_dic = {}
         for i, x in enumerate(num):
             if target-x in num_dic:
-                return num_dic[target-x]+1, i+1
+                return num_dic[target-x], i
             else:
                 num_dic[x] = i
